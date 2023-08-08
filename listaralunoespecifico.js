@@ -6,30 +6,44 @@ function listar (){
     // leitura do arquivo
     let leitura = fs.readFileSync('menu.csv', {encoding: "utf-8"})
 
+    var id = input("")
+
     let c =  leitura.split("\n")
 
     let a= 2
+
+    let l =0
     while( a< c.length){
     
         let d = c[a].split(";")
     
         let h = d[0]
-        console.log("id:" , h)
         
         let r = d[1]
-        console.log("nome:" , r)
         
         let j = d[2]
-        console.log("matrícula:" , j)
-        
+    
         let p = d[3]
-        console.log("idade:" , p)
-        
+            
         let o = d[4]
-        console.log("nota:" , o)
-            a++
+        
+        
 
-            if 
+            if (id == h){
+                l = 1
+
+                console.log("id:" , h)
+                console.log("nome:" , r)
+                console.log("matrícula:" , j)
+                console.log("idade:" , p)
+                console.log("nota:" , o)
+        
+            }
+            a++
+      }
+
+      if (l == 0){
+        console.log("id invalido")
       }
 }
 listar()
