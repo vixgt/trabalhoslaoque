@@ -95,9 +95,9 @@ caso não exista nenhum aluno com o id informado, mostrar na tela "aluno não en
 criar uma função que peça para o usuário informar um id, em seguida abra o arquivo .csv em modo de leitura "r",
 ao abrir o arquivo, ler o conteudo e salvar em uma lista de forma que cada registro de aluno seja um elemento
 da lista, percorrer a lista, verificando se o id do aluno é igual ao id informado pelo usuário,
-se for igual, remover elemento da lista. fechar o arquivo
+se for igual, remover elemento da lista
 
-abrir novamente o arquivo .csv em modo de escrita "w" e escrever toda a lista no arquivo
+escrever lista no arquivo em modo "w" mantendo a formatação
 
 caso não exista nenhum aluno com o id informado, mostrar na tela "aluno não encontrado"
 
